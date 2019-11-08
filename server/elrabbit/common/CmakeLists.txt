@@ -1,0 +1,13 @@
+set(common_SRCS
+    current_thread.cc
+    exception.cc
+    mutex.cc
+)
+
+add_library(elrabbit_common ${common_SRCS})
+target_link_libraries(elrabbit_common pthread rt)
+
+install(TARGETS elrabbit_common DESTINATION lib)
+
+file(GLOB HEADERS "*.h")
+install(FILES ${HEADERS} DESTINATION include/elrabbit/common)

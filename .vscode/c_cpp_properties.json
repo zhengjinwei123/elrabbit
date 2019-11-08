@@ -1,0 +1,41 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "intelliSenseMode": "clang-x64",
+            "includePath": [
+                "${workspaceFolder}/server/**",
+                "${workspaceFolder}/server/",
+                "D:/Program Files/LLVM/gnu.c.lib/include/",
+                "D:/Program Files/LLVM/gnu.c.lib/include/bits/",
+                "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/",
+                "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/backward/",
+                "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/bits/",
+                "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/x86_64-redhat-linux/",
+                "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/ext/"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "__cdecl=__attribute__((__cdecl__))"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/server/**",
+                    "${workspaceFolder}/server/",
+                    "D:/Program Files/LLVM/gnu.c.lib/include/",
+                    "D:/Program Files/LLVM/gnu.c.lib/include/bits/",
+                    "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/",
+                    "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/backward/",
+                    "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/bits/",
+                    "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/x86_64-redhat-linux/",
+                    "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/ext/"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}

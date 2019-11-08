@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/hgfs/myserver/server/elrabbit/common/class_util.h
+
+/mnt/hgfs/myserver/server/elrabbit/common/current_thread.h
+stdint.h
+-
+string
+-
+
+/mnt/hgfs/myserver/server/elrabbit/common/exception.cc
+elrabbit/common/exception.h
+/mnt/hgfs/myserver/server/elrabbit/common/elrabbit/common/exception.h
+elrabbit/common/current_thread.h
+/mnt/hgfs/myserver/server/elrabbit/common/elrabbit/common/current_thread.h
+
+/mnt/hgfs/myserver/server/elrabbit/common/exception.h
+exception
+-
+stdexcept
+-
+string
+-
+
+/mnt/hgfs/myserver/server/elrabbit/common/mutex.cc
+elrabbit/common/mutex.h
+/mnt/hgfs/myserver/server/elrabbit/common/elrabbit/common/mutex.h
+elrabbit/common/exception.h
+/mnt/hgfs/myserver/server/elrabbit/common/elrabbit/common/exception.h
+
+/mnt/hgfs/myserver/server/elrabbit/common/mutex.h
+memory
+-
+pthread.h
+-
+elrabbit/common/class_util.h
+/mnt/hgfs/myserver/server/elrabbit/common/elrabbit/common/class_util.h
+
