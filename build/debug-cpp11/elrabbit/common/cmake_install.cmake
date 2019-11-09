@@ -43,10 +43,13 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/elrabbit/common" TYPE FILE FILES
+    "/mnt/hgfs/myserver/server/elrabbit/common/atomic.h"
     "/mnt/hgfs/myserver/server/elrabbit/common/class_util.h"
+    "/mnt/hgfs/myserver/server/elrabbit/common/condition.h"
+    "/mnt/hgfs/myserver/server/elrabbit/common/countdown_latch.h"
     "/mnt/hgfs/myserver/server/elrabbit/common/current_thread.h"
     "/mnt/hgfs/myserver/server/elrabbit/common/exception.h"
-    "/mnt/hgfs/myserver/server/elrabbit/common/mutex.h"
+    "/mnt/hgfs/myserver/server/elrabbit/common/mutex_lock.h"
     )
 endif()
 

@@ -1,11 +1,11 @@
-#include "elrabbit/common/mutex.h"
+#include "elrabbit/common/mutex_lock.h"
 #include "elrabbit/common/exception.h"
 
 namespace elrabbit {
 
 namespace common {
 
-Mutex::Mutex()
+MutexLock::MutexLock()
 {
     if (::pthread_mutex_init(&mutex_, nullptr) != 0) {
         throw SystemErrorException(
@@ -14,12 +14,12 @@ Mutex::Mutex()
     }
 }
 
-Mutex::~Mutex()
+MutexLock::~MutexLock()
 {
     ::pthread_mutex_destroy(&mutex_);
 }
 
-void Mutex::lock()
+void MutexLock::lock()
 {
     if (::pthread_mutex_lock(&mutex_) != 0) {
         throw SystemErrorException(
@@ -28,7 +28,7 @@ void Mutex::lock()
     }
 }
 
-void Mutex::unlock()
+void MutexLock::unlock()
 {
     if (::pthread_mutex_unlock(&mutex_) != 0) {
         throw SystemErrorException(

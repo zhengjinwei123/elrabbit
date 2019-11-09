@@ -9,31 +9,36 @@ namespace elrabbit {
 
 namespace common {
 
-class Mutex: Noncopyable
+class MutexLock: Noncopyable
 {
 public:
-    Mutex();
-    ~Mutex();
+    MutexLock();
+    ~MutexLock();
 
     void lock();
     void unlock();
+
+    pthread_mutex_t* getPthreadMutex()
+    {
+        return &mutex_;
+    }
 
 private:
     pthread_mutex_t mutex_;
 };
 
-class LockGuard : Noncopyable
+class MutexLockGuard : Noncopyable
 {
 public:
-    explicit LockGuard(Mutex &m) :
-        mutex_(m)
+    explicit MutexLockGuard(MutexLock &m) :
+        mutex_lock_(m)
     {
-        mutex_.lock();
+        mutex_lock_.lock();
     }
-    ~LockGuard() { mutex_.unlock(); }
+    ~MutexLockGuard() { mutex_lock_.unlock(); }
 
 private:
-    Mutex& mutex_;
+    MutexLock& mutex_lock_;
 };
 
 }// namespace common

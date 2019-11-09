@@ -1,6 +1,16 @@
 [
 {
   "directory": "/mnt/hgfs/myserver/build/debug-cpp11/elrabbit/common",
+  "command": "/usr/bin/c++   -I/mnt/hgfs/myserver/server  -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused_parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O0   -o CMakeFiles/elrabbit_common.dir/condition.cc.o -c /mnt/hgfs/myserver/server/elrabbit/common/condition.cc",
+  "file": "/mnt/hgfs/myserver/server/elrabbit/common/condition.cc"
+},
+{
+  "directory": "/mnt/hgfs/myserver/build/debug-cpp11/elrabbit/common",
+  "command": "/usr/bin/c++   -I/mnt/hgfs/myserver/server  -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused_parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O0   -o CMakeFiles/elrabbit_common.dir/countdown_latch.cc.o -c /mnt/hgfs/myserver/server/elrabbit/common/countdown_latch.cc",
+  "file": "/mnt/hgfs/myserver/server/elrabbit/common/countdown_latch.cc"
+},
+{
+  "directory": "/mnt/hgfs/myserver/build/debug-cpp11/elrabbit/common",
   "command": "/usr/bin/c++   -I/mnt/hgfs/myserver/server  -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused_parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O0   -o CMakeFiles/elrabbit_common.dir/current_thread.cc.o -c /mnt/hgfs/myserver/server/elrabbit/common/current_thread.cc",
   "file": "/mnt/hgfs/myserver/server/elrabbit/common/current_thread.cc"
 },
@@ -11,8 +21,8 @@
 },
 {
   "directory": "/mnt/hgfs/myserver/build/debug-cpp11/elrabbit/common",
-  "command": "/usr/bin/c++   -I/mnt/hgfs/myserver/server  -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused_parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O0   -o CMakeFiles/elrabbit_common.dir/mutex.cc.o -c /mnt/hgfs/myserver/server/elrabbit/common/mutex.cc",
-  "file": "/mnt/hgfs/myserver/server/elrabbit/common/mutex.cc"
+  "command": "/usr/bin/c++   -I/mnt/hgfs/myserver/server  -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused_parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O0   -o CMakeFiles/elrabbit_common.dir/mutex_lock.cc.o -c /mnt/hgfs/myserver/server/elrabbit/common/mutex_lock.cc",
+  "file": "/mnt/hgfs/myserver/server/elrabbit/common/mutex_lock.cc"
 },
 {
   "directory": "/mnt/hgfs/myserver/build/debug-cpp11/examples",

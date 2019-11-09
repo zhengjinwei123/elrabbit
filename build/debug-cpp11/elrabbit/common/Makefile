@@ -182,6 +182,60 @@ elrabbit_common/fast:
 	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/build
 .PHONY : elrabbit_common/fast
 
+condition.o: condition.cc.o
+
+.PHONY : condition.o
+
+# target to build an object file
+condition.cc.o:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/condition.cc.o
+.PHONY : condition.cc.o
+
+condition.i: condition.cc.i
+
+.PHONY : condition.i
+
+# target to preprocess a source file
+condition.cc.i:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/condition.cc.i
+.PHONY : condition.cc.i
+
+condition.s: condition.cc.s
+
+.PHONY : condition.s
+
+# target to generate assembly for a file
+condition.cc.s:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/condition.cc.s
+.PHONY : condition.cc.s
+
+countdown_latch.o: countdown_latch.cc.o
+
+.PHONY : countdown_latch.o
+
+# target to build an object file
+countdown_latch.cc.o:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/countdown_latch.cc.o
+.PHONY : countdown_latch.cc.o
+
+countdown_latch.i: countdown_latch.cc.i
+
+.PHONY : countdown_latch.i
+
+# target to preprocess a source file
+countdown_latch.cc.i:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/countdown_latch.cc.i
+.PHONY : countdown_latch.cc.i
+
+countdown_latch.s: countdown_latch.cc.s
+
+.PHONY : countdown_latch.s
+
+# target to generate assembly for a file
+countdown_latch.cc.s:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/countdown_latch.cc.s
+.PHONY : countdown_latch.cc.s
+
 current_thread.o: current_thread.cc.o
 
 .PHONY : current_thread.o
@@ -236,32 +290,32 @@ exception.cc.s:
 	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/exception.cc.s
 .PHONY : exception.cc.s
 
-mutex.o: mutex.cc.o
+mutex_lock.o: mutex_lock.cc.o
 
-.PHONY : mutex.o
+.PHONY : mutex_lock.o
 
 # target to build an object file
-mutex.cc.o:
-	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex.cc.o
-.PHONY : mutex.cc.o
+mutex_lock.cc.o:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex_lock.cc.o
+.PHONY : mutex_lock.cc.o
 
-mutex.i: mutex.cc.i
+mutex_lock.i: mutex_lock.cc.i
 
-.PHONY : mutex.i
+.PHONY : mutex_lock.i
 
 # target to preprocess a source file
-mutex.cc.i:
-	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex.cc.i
-.PHONY : mutex.cc.i
+mutex_lock.cc.i:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex_lock.cc.i
+.PHONY : mutex_lock.cc.i
 
-mutex.s: mutex.cc.s
+mutex_lock.s: mutex_lock.cc.s
 
-.PHONY : mutex.s
+.PHONY : mutex_lock.s
 
 # target to generate assembly for a file
-mutex.cc.s:
-	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex.cc.s
-.PHONY : mutex.cc.s
+mutex_lock.cc.s:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex_lock.cc.s
+.PHONY : mutex_lock.cc.s
 
 # Help Target
 help:
@@ -277,15 +331,21 @@ help:
 	@echo "... test"
 	@echo "... edit_cache"
 	@echo "... elrabbit_common"
+	@echo "... condition.o"
+	@echo "... condition.i"
+	@echo "... condition.s"
+	@echo "... countdown_latch.o"
+	@echo "... countdown_latch.i"
+	@echo "... countdown_latch.s"
 	@echo "... current_thread.o"
 	@echo "... current_thread.i"
 	@echo "... current_thread.s"
 	@echo "... exception.o"
 	@echo "... exception.i"
 	@echo "... exception.s"
-	@echo "... mutex.o"
-	@echo "... mutex.i"
-	@echo "... mutex.s"
+	@echo "... mutex_lock.o"
+	@echo "... mutex_lock.i"
+	@echo "... mutex_lock.s"
 .PHONY : help
 
 
