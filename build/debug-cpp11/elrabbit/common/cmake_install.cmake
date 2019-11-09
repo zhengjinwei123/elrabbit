@@ -49,6 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/mnt/hgfs/myserver/server/elrabbit/common/countdown_latch.h"
     "/mnt/hgfs/myserver/server/elrabbit/common/current_thread.h"
     "/mnt/hgfs/myserver/server/elrabbit/common/exception.h"
+    "/mnt/hgfs/myserver/server/elrabbit/common/file_util.h"
     "/mnt/hgfs/myserver/server/elrabbit/common/mutex_lock.h"
     "/mnt/hgfs/myserver/server/elrabbit/common/string_piece.h"
     )

@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/elrabbit_common.dir/countdown_latch.cc.o"
   "CMakeFiles/elrabbit_common.dir/current_thread.cc.o"
   "CMakeFiles/elrabbit_common.dir/exception.cc.o"
+  "CMakeFiles/elrabbit_common.dir/file_util.cc.o"
   "CMakeFiles/elrabbit_common.dir/mutex_lock.cc.o"
 )
 

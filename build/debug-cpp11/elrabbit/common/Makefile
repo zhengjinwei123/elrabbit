@@ -290,6 +290,33 @@ exception.cc.s:
 	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/exception.cc.s
 .PHONY : exception.cc.s
 
+file_util.o: file_util.cc.o
+
+.PHONY : file_util.o
+
+# target to build an object file
+file_util.cc.o:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/file_util.cc.o
+.PHONY : file_util.cc.o
+
+file_util.i: file_util.cc.i
+
+.PHONY : file_util.i
+
+# target to preprocess a source file
+file_util.cc.i:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/file_util.cc.i
+.PHONY : file_util.cc.i
+
+file_util.s: file_util.cc.s
+
+.PHONY : file_util.s
+
+# target to generate assembly for a file
+file_util.cc.s:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/file_util.cc.s
+.PHONY : file_util.cc.s
+
 mutex_lock.o: mutex_lock.cc.o
 
 .PHONY : mutex_lock.o
@@ -343,6 +370,9 @@ help:
 	@echo "... exception.o"
 	@echo "... exception.i"
 	@echo "... exception.s"
+	@echo "... file_util.o"
+	@echo "... file_util.i"
+	@echo "... file_util.s"
 	@echo "... mutex_lock.o"
 	@echo "... mutex_lock.i"
 	@echo "... mutex_lock.s"

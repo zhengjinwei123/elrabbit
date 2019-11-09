@@ -3,6 +3,7 @@ set(common_SRCS
     countdown_latch.cc
     current_thread.cc
     exception.cc
+    file_util.cc
     mutex_lock.cc
 )
 

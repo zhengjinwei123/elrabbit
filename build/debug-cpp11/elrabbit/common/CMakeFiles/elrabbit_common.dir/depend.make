@@ -21,6 +21,11 @@ elrabbit/common/CMakeFiles/elrabbit_common.dir/exception.cc.o: /mnt/hgfs/myserve
 elrabbit/common/CMakeFiles/elrabbit_common.dir/exception.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/exception.cc
 elrabbit/common/CMakeFiles/elrabbit_common.dir/exception.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/exception.h
 
+elrabbit/common/CMakeFiles/elrabbit_common.dir/file_util.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/class_util.h
+elrabbit/common/CMakeFiles/elrabbit_common.dir/file_util.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/file_util.cc
+elrabbit/common/CMakeFiles/elrabbit_common.dir/file_util.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/file_util.h
+elrabbit/common/CMakeFiles/elrabbit_common.dir/file_util.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/string_piece.h
+
 elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex_lock.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/class_util.h
 elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex_lock.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/exception.h
 elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex_lock.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/mutex_lock.cc
