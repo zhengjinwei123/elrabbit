@@ -5,6 +5,7 @@
     "c-cpp-flylint.run": "onType",
     "c-cpp-flylint.clang.includePaths": [
         "${workspaceFolder}/**",
+        "${workspaceFolder}/*",
         "${workspaceFolder}/",
         "D:\\Program Files\\LLVM\\gnu.c.lib\\include",
         "D:\\Program Files\\LLVM\\gnu.c.lib\\include\\bits",

@@ -3,4 +3,5 @@
 
 examples/CMakeFiles/test1.dir/test1/main.cc.o
  /mnt/hgfs/myserver/server/elrabbit/common/class_util.h
+ /mnt/hgfs/myserver/server/elrabbit/common/string_piece.h
  /mnt/hgfs/myserver/server/examples/test1/main.cc

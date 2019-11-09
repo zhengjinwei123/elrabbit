@@ -5,6 +5,7 @@
             "intelliSenseMode": "clang-x64",
             "includePath": [
                 "${workspaceFolder}/server/**",
+                "${workspaceFolder}/server/*",
                 "${workspaceFolder}/server/",
                 "D:/Program Files/LLVM/gnu.c.lib/include/",
                 "D:/Program Files/LLVM/gnu.c.lib/include/bits/",
@@ -23,6 +24,7 @@
             "browse": {
                 "path": [
                     "${workspaceFolder}/server/**",
+                    "${workspaceFolder}/server/*",
                     "${workspaceFolder}/server/",
                     "D:/Program Files/LLVM/gnu.c.lib/include/",
                     "D:/Program Files/LLVM/gnu.c.lib/include/bits/",
