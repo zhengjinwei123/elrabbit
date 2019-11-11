@@ -4,6 +4,7 @@
 
 #include <algorithm>
 #include <assert.h>
+#include <dirent.h>
 #include <pwd.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -29,7 +30,7 @@ __thread std::vector<pid_t>* t_pids = nullptr;
 int taskDirFilter(const struct dirent* d)
 {
     if (::isdigit(d->d_name[0])) {
-        t_pids->push_back(atoi(d->d_name[0]));
+        t_pids->push_back(atoi(d->d_name));
     }
     return 0;
 }
@@ -42,7 +43,7 @@ int scanDir(const char* dir_path, int (*filter)(const struct dirent*))
     return result;
 }
 
-Timestamp g_start_time = Timestamp::now();
+Timestamp g_start_time = Timestamp::nowTimestamp();
 int g_clock_ticks = static_cast<int>(::sysconf(_SC_CLK_TCK));
 int g_page_size = static_cast<int>(::sysconf(_SC_PAGE_SIZE));
 
@@ -107,7 +108,7 @@ std::string hostName()
         buf[sizeof(buf) - 1] = '\0';
         return buf;
     }
-    return 'unknown_host';
+    return "unknown_host";
 }
 
 std::string procName()
@@ -185,7 +186,7 @@ CpuTime cpuTime()
         t.user_seconds = static_cast<double>(tms.tms_utime) / hz;
         t.system_seconds = static_cast<double>(tms.tms_stime) / hz;
     }
-    return t;s
+    return t;
 }
 
 int numThreads()

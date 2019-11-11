@@ -344,6 +344,60 @@ mutex_lock.cc.s:
 	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex_lock.cc.s
 .PHONY : mutex_lock.cc.s
 
+process_info.o: process_info.cc.o
+
+.PHONY : process_info.o
+
+# target to build an object file
+process_info.cc.o:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/process_info.cc.o
+.PHONY : process_info.cc.o
+
+process_info.i: process_info.cc.i
+
+.PHONY : process_info.i
+
+# target to preprocess a source file
+process_info.cc.i:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/process_info.cc.i
+.PHONY : process_info.cc.i
+
+process_info.s: process_info.cc.s
+
+.PHONY : process_info.s
+
+# target to generate assembly for a file
+process_info.cc.s:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/process_info.cc.s
+.PHONY : process_info.cc.s
+
+timestamp.o: timestamp.cc.o
+
+.PHONY : timestamp.o
+
+# target to build an object file
+timestamp.cc.o:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/timestamp.cc.o
+.PHONY : timestamp.cc.o
+
+timestamp.i: timestamp.cc.i
+
+.PHONY : timestamp.i
+
+# target to preprocess a source file
+timestamp.cc.i:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/timestamp.cc.i
+.PHONY : timestamp.cc.i
+
+timestamp.s: timestamp.cc.s
+
+.PHONY : timestamp.s
+
+# target to generate assembly for a file
+timestamp.cc.s:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/timestamp.cc.s
+.PHONY : timestamp.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -376,6 +430,12 @@ help:
 	@echo "... mutex_lock.o"
 	@echo "... mutex_lock.i"
 	@echo "... mutex_lock.s"
+	@echo "... process_info.o"
+	@echo "... process_info.i"
+	@echo "... process_info.s"
+	@echo "... timestamp.o"
+	@echo "... timestamp.i"
+	@echo "... timestamp.s"
 .PHONY : help
 
 

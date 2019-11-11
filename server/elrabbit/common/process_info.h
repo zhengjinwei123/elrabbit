@@ -10,6 +10,7 @@
 namespace elrabbit {
 
 using common::StringPiece;
+using common::Timestamp;
 
 namespace process_info {
 

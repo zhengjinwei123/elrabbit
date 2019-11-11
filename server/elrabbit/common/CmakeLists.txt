@@ -5,6 +5,8 @@ set(common_SRCS
     exception.cc
     file_util.cc
     mutex_lock.cc
+    process_info.cc
+    timestamp.cc
 )
 
 add_library(elrabbit_common ${common_SRCS})

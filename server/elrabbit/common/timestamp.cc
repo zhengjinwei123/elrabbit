@@ -13,6 +13,13 @@ Timestamp::Timestamp() :
 
 }
 
+Timestamp::Timestamp(time_t second, int64_t nanosecond) :
+    second_(second),
+    nanosecond_(nanosecond)
+{
+
+}
+
 Timestamp::~Timestamp()
 {
 
@@ -31,7 +38,7 @@ Timestamp &Timestamp::operator+=(int64_t millisecond)
 {
     second_ += millisecond / 1000;
     nanosecond_ += millisecond % 1000 * 1000000;
-    if (nanosecond >= 1000000000) {
+    if (nanosecond_ >= 1000000000) {
         second_ += 1;
         nanosecond_ -= 1000000000;
     }
@@ -91,7 +98,7 @@ int64_t Timestamp::distanceMillisecond(const Timestamp &other) const
     }
 
     return (bigger->second_ - smaller->second_) * 1000 +
-           (bigger->getMilliSecond() - smaller->getMilliSecond());
+           (bigger->getMillisecond() - smaller->getMillisecond());
 }
 
 time_t Timestamp::now()
@@ -99,6 +106,13 @@ time_t Timestamp::now()
     struct timespec tv;
     ::clock_gettime(CLOCK_REALTIME, &tv);
     return tv.tv_sec;
+}
+Timestamp Timestamp::nowTimestamp()
+{
+    struct timespec tv;
+    ::clock_gettime(CLOCK_REALTIME, &tv);
+
+    return Timestamp(tv.tv_sec, tv.tv_nsec);
 }
 
 size_t Timestamp::format(char *buffer, size_t size,

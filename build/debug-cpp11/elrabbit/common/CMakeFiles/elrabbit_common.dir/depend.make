@@ -31,3 +31,14 @@ elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex_lock.cc.o: /mnt/hgfs/myserv
 elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex_lock.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/mutex_lock.cc
 elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex_lock.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/mutex_lock.h
 
+elrabbit/common/CMakeFiles/elrabbit_common.dir/process_info.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/class_util.h
+elrabbit/common/CMakeFiles/elrabbit_common.dir/process_info.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/current_thread.h
+elrabbit/common/CMakeFiles/elrabbit_common.dir/process_info.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/file_util.h
+elrabbit/common/CMakeFiles/elrabbit_common.dir/process_info.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/process_info.cc
+elrabbit/common/CMakeFiles/elrabbit_common.dir/process_info.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/process_info.h
+elrabbit/common/CMakeFiles/elrabbit_common.dir/process_info.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/string_piece.h
+elrabbit/common/CMakeFiles/elrabbit_common.dir/process_info.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/timestamp.h
+
+elrabbit/common/CMakeFiles/elrabbit_common.dir/timestamp.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/timestamp.cc
+elrabbit/common/CMakeFiles/elrabbit_common.dir/timestamp.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/timestamp.h
+

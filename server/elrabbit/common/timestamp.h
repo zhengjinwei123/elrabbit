@@ -12,6 +12,7 @@ namespace common {
 class Timestamp {
 public:
     Timestamp();
+    Timestamp(time_t second, int64_t nanosecond);
     ~Timestamp();
 
     void setNow();
@@ -30,6 +31,7 @@ public:
     int64_t distanceMillisecond(const Timestamp &other) const;
 
     static time_t now();
+    static Timestamp nowTimestamp();
     static size_t format(char* buffer, size_t size, const char* format, time_t second);
 
 private:

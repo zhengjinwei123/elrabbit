@@ -6,41 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/mnt/hgfs/myserver/server/elrabbit/common/class_util.h
-
-/mnt/hgfs/myserver/server/elrabbit/common/file_util.cc
-elrabbit/common/file_util.h
-/mnt/hgfs/myserver/server/elrabbit/common/elrabbit/common/file_util.h
-assert.h
--
-errno.h
--
-fcntl.h
--
-stdio.h
--
-sys/stat.h
--
-unistd.h
+/mnt/hgfs/myserver/server/elrabbit/common/timestamp.cc
+elrabbit/common/timestamp.h
+/mnt/hgfs/myserver/server/elrabbit/common/elrabbit/common/timestamp.h
+sys/time.h
 -
 
-/mnt/hgfs/myserver/server/elrabbit/common/file_util.h
+/mnt/hgfs/myserver/server/elrabbit/common/timestamp.h
 stdint.h
 -
-sys/types.h
+cstddef
 -
-string.h
--
-elrabbit/common/class_util.h
-/mnt/hgfs/myserver/server/elrabbit/common/elrabbit/common/class_util.h
-elrabbit/common/string_piece.h
-/mnt/hgfs/myserver/server/elrabbit/common/elrabbit/common/string_piece.h
-
-/mnt/hgfs/myserver/server/elrabbit/common/string_piece.h
-string.h
--
-string
--
-iosfwd
+ctime
 -
 
