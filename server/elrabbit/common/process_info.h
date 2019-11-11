@@ -9,6 +9,8 @@
 
 namespace elrabbit {
 
+using common::StringPiece;
+
 namespace process_info {
 
     pid_t pid();

@@ -9,8 +9,9 @@
 
 namespace elrabbit {
 
-namespace common {
+using common::StringArg;
 
+namespace file_util {
 
 ReadSmallFile::ReadSmallFile(StringArg file_name):
     fd_(::open(file_name.c_str(), O_RDONLY | __O_CLOEXEC)),

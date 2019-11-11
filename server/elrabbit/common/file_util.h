@@ -9,7 +9,9 @@
 
 namespace elrabbit {
 
-namespace common {
+using common::StringArg;
+
+namespace file_util {
 
 // read small file size < 64KB
 class ReadSmallFile : Noncopyable {
@@ -66,6 +68,6 @@ private:
     off_t written_bytes_;
 };
 
-} // namespace common
+} // namespace file_util
 } // namespace elrabbit
 #endif // ELRABBIT_COMMON_FILE_UTIL_H
