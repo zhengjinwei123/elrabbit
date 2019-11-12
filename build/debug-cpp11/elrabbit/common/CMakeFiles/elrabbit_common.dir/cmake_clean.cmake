@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/elrabbit_common.dir/exception.cc.o"
   "CMakeFiles/elrabbit_common.dir/file_util.cc.o"
   "CMakeFiles/elrabbit_common.dir/log_file.cc.o"
+  "CMakeFiles/elrabbit_common.dir/log_stream.cc.o"
   "CMakeFiles/elrabbit_common.dir/mutex_lock.cc.o"
   "CMakeFiles/elrabbit_common.dir/process_info.cc.o"
   "CMakeFiles/elrabbit_common.dir/thread.cc.o"

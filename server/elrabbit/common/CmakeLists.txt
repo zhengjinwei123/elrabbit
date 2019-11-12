@@ -5,6 +5,7 @@ set(common_SRCS
     exception.cc
     file_util.cc
     log_file.cc
+    log_stream.cc
     mutex_lock.cc
     process_info.cc
     thread.cc
