@@ -371,6 +371,33 @@ process_info.cc.s:
 	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/process_info.cc.s
 .PHONY : process_info.cc.s
 
+thread.o: thread.cc.o
+
+.PHONY : thread.o
+
+# target to build an object file
+thread.cc.o:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/thread.cc.o
+.PHONY : thread.cc.o
+
+thread.i: thread.cc.i
+
+.PHONY : thread.i
+
+# target to preprocess a source file
+thread.cc.i:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/thread.cc.i
+.PHONY : thread.cc.i
+
+thread.s: thread.cc.s
+
+.PHONY : thread.s
+
+# target to generate assembly for a file
+thread.cc.s:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/thread.cc.s
+.PHONY : thread.cc.s
+
 timestamp.o: timestamp.cc.o
 
 .PHONY : timestamp.o
@@ -433,6 +460,9 @@ help:
 	@echo "... process_info.o"
 	@echo "... process_info.i"
 	@echo "... process_info.s"
+	@echo "... thread.o"
+	@echo "... thread.i"
+	@echo "... thread.s"
 	@echo "... timestamp.o"
 	@echo "... timestamp.i"
 	@echo "... timestamp.s"

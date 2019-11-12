@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/elrabbit_common.dir/file_util.cc.o"
   "CMakeFiles/elrabbit_common.dir/mutex_lock.cc.o"
   "CMakeFiles/elrabbit_common.dir/process_info.cc.o"
+  "CMakeFiles/elrabbit_common.dir/thread.cc.o"
   "CMakeFiles/elrabbit_common.dir/timestamp.cc.o"
 )
 

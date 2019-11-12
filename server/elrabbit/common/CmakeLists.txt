@@ -6,6 +6,7 @@ set(common_SRCS
     file_util.cc
     mutex_lock.cc
     process_info.cc
+    thread.cc
     timestamp.cc
 )
 

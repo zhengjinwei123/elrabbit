@@ -148,9 +148,22 @@ elrabbit/common/CMakeFiles/elrabbit_common.dir/process_info.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/elrabbit_common.dir/process_info.cc.s"
 	cd /mnt/hgfs/myserver/build/debug-cpp11/elrabbit/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/myserver/server/elrabbit/common/process_info.cc -o CMakeFiles/elrabbit_common.dir/process_info.cc.s
 
+elrabbit/common/CMakeFiles/elrabbit_common.dir/thread.cc.o: elrabbit/common/CMakeFiles/elrabbit_common.dir/flags.make
+elrabbit/common/CMakeFiles/elrabbit_common.dir/thread.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/thread.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/myserver/build/debug-cpp11/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object elrabbit/common/CMakeFiles/elrabbit_common.dir/thread.cc.o"
+	cd /mnt/hgfs/myserver/build/debug-cpp11/elrabbit/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/elrabbit_common.dir/thread.cc.o -c /mnt/hgfs/myserver/server/elrabbit/common/thread.cc
+
+elrabbit/common/CMakeFiles/elrabbit_common.dir/thread.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/elrabbit_common.dir/thread.cc.i"
+	cd /mnt/hgfs/myserver/build/debug-cpp11/elrabbit/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/myserver/server/elrabbit/common/thread.cc > CMakeFiles/elrabbit_common.dir/thread.cc.i
+
+elrabbit/common/CMakeFiles/elrabbit_common.dir/thread.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/elrabbit_common.dir/thread.cc.s"
+	cd /mnt/hgfs/myserver/build/debug-cpp11/elrabbit/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/myserver/server/elrabbit/common/thread.cc -o CMakeFiles/elrabbit_common.dir/thread.cc.s
+
 elrabbit/common/CMakeFiles/elrabbit_common.dir/timestamp.cc.o: elrabbit/common/CMakeFiles/elrabbit_common.dir/flags.make
 elrabbit/common/CMakeFiles/elrabbit_common.dir/timestamp.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/timestamp.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/myserver/build/debug-cpp11/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object elrabbit/common/CMakeFiles/elrabbit_common.dir/timestamp.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/myserver/build/debug-cpp11/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object elrabbit/common/CMakeFiles/elrabbit_common.dir/timestamp.cc.o"
 	cd /mnt/hgfs/myserver/build/debug-cpp11/elrabbit/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/elrabbit_common.dir/timestamp.cc.o -c /mnt/hgfs/myserver/server/elrabbit/common/timestamp.cc
 
 elrabbit/common/CMakeFiles/elrabbit_common.dir/timestamp.cc.i: cmake_force
@@ -170,6 +183,7 @@ elrabbit_common_OBJECTS = \
 "CMakeFiles/elrabbit_common.dir/file_util.cc.o" \
 "CMakeFiles/elrabbit_common.dir/mutex_lock.cc.o" \
 "CMakeFiles/elrabbit_common.dir/process_info.cc.o" \
+"CMakeFiles/elrabbit_common.dir/thread.cc.o" \
 "CMakeFiles/elrabbit_common.dir/timestamp.cc.o"
 
 # External object files for target elrabbit_common
@@ -182,10 +196,11 @@ lib/libelrabbit_common.a: elrabbit/common/CMakeFiles/elrabbit_common.dir/excepti
 lib/libelrabbit_common.a: elrabbit/common/CMakeFiles/elrabbit_common.dir/file_util.cc.o
 lib/libelrabbit_common.a: elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex_lock.cc.o
 lib/libelrabbit_common.a: elrabbit/common/CMakeFiles/elrabbit_common.dir/process_info.cc.o
+lib/libelrabbit_common.a: elrabbit/common/CMakeFiles/elrabbit_common.dir/thread.cc.o
 lib/libelrabbit_common.a: elrabbit/common/CMakeFiles/elrabbit_common.dir/timestamp.cc.o
 lib/libelrabbit_common.a: elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make
 lib/libelrabbit_common.a: elrabbit/common/CMakeFiles/elrabbit_common.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/hgfs/myserver/build/debug-cpp11/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library ../../lib/libelrabbit_common.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/hgfs/myserver/build/debug-cpp11/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library ../../lib/libelrabbit_common.a"
 	cd /mnt/hgfs/myserver/build/debug-cpp11/elrabbit/common && $(CMAKE_COMMAND) -P CMakeFiles/elrabbit_common.dir/cmake_clean_target.cmake
 	cd /mnt/hgfs/myserver/build/debug-cpp11/elrabbit/common && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/elrabbit_common.dir/link.txt --verbose=$(VERBOSE)
 

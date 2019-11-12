@@ -34,6 +34,9 @@ public:
     static Timestamp nowTimestamp();
     static size_t format(char* buffer, size_t size, const char* format, time_t second);
 
+public:
+    static const int kMicroSecondsPerSecond = 1000 * 1000;
+
 private:
     time_t second_;
     int64_t nanosecond_;

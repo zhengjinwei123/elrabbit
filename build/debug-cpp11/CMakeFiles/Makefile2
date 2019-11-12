@@ -134,12 +134,12 @@ examples/clean: examples/CMakeFiles/test1.dir/clean
 elrabbit/common/CMakeFiles/elrabbit_common.dir/all:
 	$(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/depend
 	$(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/myserver/build/debug-cpp11/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target elrabbit_common"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/myserver/build/debug-cpp11/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target elrabbit_common"
 .PHONY : elrabbit/common/CMakeFiles/elrabbit_common.dir/all
 
 # Build rule for subdir invocation for target.
 elrabbit/common/CMakeFiles/elrabbit_common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/myserver/build/debug-cpp11/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/myserver/build/debug-cpp11/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 elrabbit/common/CMakeFiles/elrabbit_common.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/myserver/build/debug-cpp11/CMakeFiles 0
 .PHONY : elrabbit/common/CMakeFiles/elrabbit_common.dir/rule
@@ -161,12 +161,12 @@ elrabbit/common/CMakeFiles/elrabbit_common.dir/clean:
 examples/CMakeFiles/test1.dir/all: elrabbit/common/CMakeFiles/elrabbit_common.dir/all
 	$(MAKE) -f examples/CMakeFiles/test1.dir/build.make examples/CMakeFiles/test1.dir/depend
 	$(MAKE) -f examples/CMakeFiles/test1.dir/build.make examples/CMakeFiles/test1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/myserver/build/debug-cpp11/CMakeFiles --progress-num=10,11 "Built target test1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/myserver/build/debug-cpp11/CMakeFiles --progress-num=11,12 "Built target test1"
 .PHONY : examples/CMakeFiles/test1.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/test1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/myserver/build/debug-cpp11/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/myserver/build/debug-cpp11/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/test1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/myserver/build/debug-cpp11/CMakeFiles 0
 .PHONY : examples/CMakeFiles/test1.dir/rule

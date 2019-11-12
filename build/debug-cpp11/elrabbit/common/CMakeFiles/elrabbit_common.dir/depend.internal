@@ -39,6 +39,17 @@ elrabbit/common/CMakeFiles/elrabbit_common.dir/process_info.cc.o
  /mnt/hgfs/myserver/server/elrabbit/common/process_info.h
  /mnt/hgfs/myserver/server/elrabbit/common/string_piece.h
  /mnt/hgfs/myserver/server/elrabbit/common/timestamp.h
+elrabbit/common/CMakeFiles/elrabbit_common.dir/thread.cc.o
+ /mnt/hgfs/myserver/server/elrabbit/common/atomic.h
+ /mnt/hgfs/myserver/server/elrabbit/common/class_util.h
+ /mnt/hgfs/myserver/server/elrabbit/common/condition.h
+ /mnt/hgfs/myserver/server/elrabbit/common/countdown_latch.h
+ /mnt/hgfs/myserver/server/elrabbit/common/current_thread.h
+ /mnt/hgfs/myserver/server/elrabbit/common/exception.h
+ /mnt/hgfs/myserver/server/elrabbit/common/mutex_lock.h
+ /mnt/hgfs/myserver/server/elrabbit/common/thread.cc
+ /mnt/hgfs/myserver/server/elrabbit/common/thread.h
+ /mnt/hgfs/myserver/server/elrabbit/common/timestamp.h
 elrabbit/common/CMakeFiles/elrabbit_common.dir/timestamp.cc.o
  /mnt/hgfs/myserver/server/elrabbit/common/timestamp.cc
  /mnt/hgfs/myserver/server/elrabbit/common/timestamp.h
