@@ -26,6 +26,15 @@ elrabbit/common/CMakeFiles/elrabbit_common.dir/file_util.cc.o: /mnt/hgfs/myserve
 elrabbit/common/CMakeFiles/elrabbit_common.dir/file_util.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/file_util.h
 elrabbit/common/CMakeFiles/elrabbit_common.dir/file_util.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/string_piece.h
 
+elrabbit/common/CMakeFiles/elrabbit_common.dir/log_file.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/class_util.h
+elrabbit/common/CMakeFiles/elrabbit_common.dir/log_file.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/file_util.h
+elrabbit/common/CMakeFiles/elrabbit_common.dir/log_file.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/log_file.cc
+elrabbit/common/CMakeFiles/elrabbit_common.dir/log_file.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/log_file.h
+elrabbit/common/CMakeFiles/elrabbit_common.dir/log_file.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/mutex_lock.h
+elrabbit/common/CMakeFiles/elrabbit_common.dir/log_file.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/process_info.h
+elrabbit/common/CMakeFiles/elrabbit_common.dir/log_file.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/string_piece.h
+elrabbit/common/CMakeFiles/elrabbit_common.dir/log_file.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/timestamp.h
+
 elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex_lock.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/class_util.h
 elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex_lock.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/exception.h
 elrabbit/common/CMakeFiles/elrabbit_common.dir/mutex_lock.cc.o: /mnt/hgfs/myserver/server/elrabbit/common/mutex_lock.cc
