@@ -371,6 +371,33 @@ log_stream.cc.s:
 	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/log_stream.cc.s
 .PHONY : log_stream.cc.s
 
+logging.o: logging.cc.o
+
+.PHONY : logging.o
+
+# target to build an object file
+logging.cc.o:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/logging.cc.o
+.PHONY : logging.cc.o
+
+logging.i: logging.cc.i
+
+.PHONY : logging.i
+
+# target to preprocess a source file
+logging.cc.i:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/logging.cc.i
+.PHONY : logging.cc.i
+
+logging.s: logging.cc.s
+
+.PHONY : logging.s
+
+# target to generate assembly for a file
+logging.cc.s:
+	cd /mnt/hgfs/myserver/build/debug-cpp11 && $(MAKE) -f elrabbit/common/CMakeFiles/elrabbit_common.dir/build.make elrabbit/common/CMakeFiles/elrabbit_common.dir/logging.cc.s
+.PHONY : logging.cc.s
+
 mutex_lock.o: mutex_lock.cc.o
 
 .PHONY : mutex_lock.o
@@ -514,6 +541,9 @@ help:
 	@echo "... log_stream.o"
 	@echo "... log_stream.i"
 	@echo "... log_stream.s"
+	@echo "... logging.o"
+	@echo "... logging.i"
+	@echo "... logging.s"
 	@echo "... mutex_lock.o"
 	@echo "... mutex_lock.i"
 	@echo "... mutex_lock.s"

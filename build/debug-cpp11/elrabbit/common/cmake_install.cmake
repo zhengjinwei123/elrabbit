@@ -52,6 +52,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/mnt/hgfs/myserver/server/elrabbit/common/file_util.h"
     "/mnt/hgfs/myserver/server/elrabbit/common/log_file.h"
     "/mnt/hgfs/myserver/server/elrabbit/common/log_stream.h"
+    "/mnt/hgfs/myserver/server/elrabbit/common/logging.h"
     "/mnt/hgfs/myserver/server/elrabbit/common/mutex_lock.h"
     "/mnt/hgfs/myserver/server/elrabbit/common/process_info.h"
     "/mnt/hgfs/myserver/server/elrabbit/common/string_piece.h"
