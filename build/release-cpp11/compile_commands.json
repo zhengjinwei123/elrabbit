@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/mnt/hgfs/myserver/build/release-cpp11/examples/test1",
-  "command": "/usr/bin/c++   -I/mnt/hgfs/myserver/server  -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused_parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG   -o CMakeFiles/Demo.dir/main.cc.o -c /mnt/hgfs/myserver/server/examples/test1/main.cc",
-  "file": "/mnt/hgfs/myserver/server/examples/test1/main.cc"
-}
-]

@@ -4,16 +4,14 @@
             "name": "Win32",
             "intelliSenseMode": "clang-x64",
             "includePath": [
-                "${workspaceFolder}/server/**",
-                "${workspaceFolder}/server/*",
-                "${workspaceFolder}/server/",
-                "D:/Program Files/LLVM/gnu.c.lib/include/",
-                "D:/Program Files/LLVM/gnu.c.lib/include/bits/",
-                "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/",
-                "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/backward/",
-                "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/bits/",
-                "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/x86_64-redhat-linux/",
-                "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/ext/"
+                "${workspaceFolder}/**",
+                "C:\\Program Files\\LLVM\\gnu.c.lib\\include",
+                "C:\\Program Files\\LLVM\\gnu.c.lib\\include\\bits",
+                "C:\\Program Files\\LLVM\\gnu.c.lib\\include\\c++\\4.8.2",
+                "C:\\Program Files\\LLVM\\gnu.c.lib\\include\\c++\\4.8.2\backward",
+                "C:\\Program Files\\LLVM\\gnu.c.lib\\include\\c++\\4.8.2\\bits",
+                "C:\\Program Files\\LLVM\\gnu.c.lib\\include\\c++\\4.8.2\\x86_64-redhat-linux",
+                "C:\\Program Files\\LLVM\\gnu.c.lib\\include\\c++\\4.8.2\\ext"
             ],
             "defines": [
                 "_DEBUG",
@@ -23,16 +21,14 @@
             ],
             "browse": {
                 "path": [
-                    "${workspaceFolder}/server/**",
-                    "${workspaceFolder}/server/*",
-                    "${workspaceFolder}/server/",
-                    "D:/Program Files/LLVM/gnu.c.lib/include/",
-                    "D:/Program Files/LLVM/gnu.c.lib/include/bits/",
-                    "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/",
-                    "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/backward/",
-                    "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/bits/",
-                    "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/x86_64-redhat-linux/",
-                    "D:/Program Files/LLVM/gnu.c.lib/include/c++/4.8.2/ext/"
+                    "${workspaceFolder}/**",
+                    "C:\\Program Files\\LLVM\\gnu.c.lib\\include",
+                    "C:\\Program Files\\LLVM\\gnu.c.lib\\include\\bits",
+                    "C:\\Program Files\\LLVM\\gnu.c.lib\\include\\c++\\4.8.2",
+                    "C:\\Program Files\\LLVM\\gnu.c.lib\\include\\c++\\4.8.2\backward",
+                    "C:\\Program Files\\LLVM\\gnu.c.lib\\include\\c++\\4.8.2\\bits",
+                    "C:\\Program Files\\LLVM\\gnu.c.lib\\include\\c++\\4.8.2\\x86_64-redhat-linux",
+                    "C:\\Program Files\\LLVM\\gnu.c.lib\\include\\c++\\4.8.2\\ext"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""

@@ -31,7 +31,7 @@
                 "pipeCwd": ""
             },
             "sourceFileMap": {
-                "/mnt/c": "D:\\"
+                "/mnt/c": "C:\\"
             }
         }
     ]
