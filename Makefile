@@ -10,5 +10,5 @@ debug release profile clean:
 	@$(call ECHO, "[build libtinyxml2]")
 	@$(MAKE) -f mak/libtinyxml2.mak $@
 
-	@$(call ECHO, "[build demo1]")
+	@$(call ECHO, "[build session_server]")
 	@$(MAKE) -f mak/session_server.mak $@
