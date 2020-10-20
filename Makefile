@@ -12,3 +12,12 @@ debug release profile clean:
 
 	@$(call ECHO, "[build session_server]")
 	@$(MAKE) -f mak/session_server.mak $@
+
+	@$(call ECHO, "[build demo_server1]")
+	@$(MAKE) -f mak/demo_server.mak $@
+
+	@$(call ECHO, "[build demo_client1]")
+	@$(MAKE) -f mak/demo_client.mak $@
+
+	@$(call ECHO, "[build c11]")
+	@$(MAKE) -f mak/c11.mak $@

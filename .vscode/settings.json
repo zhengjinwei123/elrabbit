@@ -80,6 +80,13 @@
         "list": "cpp",
         "thread": "cpp",
         "mutex": "cpp",
-        "condition_variable": "cpp"
+        "condition_variable": "cpp",
+        "numeric": "cpp",
+        "random": "cpp",
+        "csignal": "cpp",
+        "cassert": "cpp",
+        "chrono": "cpp",
+        "ratio": "cpp",
+        "cerrno": "cpp"
     }
 }
