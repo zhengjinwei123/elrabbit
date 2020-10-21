@@ -5,7 +5,7 @@
 #include <cerrno>
 #include <pthread.h>
 
-#include "mutext_lock.h"
+#include "mutex_lock.h"
 #include "noncopyable.h"
 
 namespace ele
@@ -13,16 +13,14 @@ namespace ele
     class Condition : noncopyable
     {
     public:
-        explicit Condition(MutexLock &mutex_lock) : mutex_lock_(mutex_lock),
-                                                    cond_{}
+        explicit Condition(MutexLock &mutex_lock) : mutex_lock_(mutex_lock), cond_{}
         {
-
             assert(pthread_cond_init(&cond_, nullptr) == 0);
         }
 
         ~Condition()
         {
-            assert(pthread_cond_destroy(&cond_));
+            assert(pthread_cond_destroy(&cond_) == 0);
         }
 
         void wait()
@@ -50,7 +48,7 @@ namespace ele
         }
 
     private:
-        MutexLock mutex_lock_;
+        MutexLock &mutex_lock_;
         pthread_cond_t cond_;
     };
 } // namespace ele

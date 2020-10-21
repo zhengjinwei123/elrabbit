@@ -3,6 +3,7 @@
 #include <memory>
 #include <unistd.h>
 
+#include <lib/ele/base/concurrent_queue.h>
 #include <lib/ele/base/dynamic_buffer.h>
 #include <lib/ele/base/exception.h>
 #include <lib/ele/base/object_pool.h>
@@ -308,6 +309,29 @@ int main(int argc, const char *argv[])
     cout << "j:" << j << endl;
     cout << "j1:" << j1 << endl;
     cout << "j2:" << j2 << endl;
+
+    ele::ThreadPool threadPool("thread pool 1");
+    threadPool.start(10);
+
+    ele::ConcurrentQueue<int> conqueue(10);
+
+    while (1)
+    {
+        threadPool.run([&]() {
+
+            
+
+            int a = 1;
+            conqueue.pop(a);
+            conqueue.push(11010);
+
+
+            cout << "hallo:" << a << ":" << endl;
+        });
+    }
+
+    int a;
+    cin >> a;
 
     return 0;
 }
