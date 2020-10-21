@@ -6,6 +6,8 @@ src/lib/ele/base/system.cc \
 src/lib/ele/base/thread.cc \
 src/lib/ele/base/thread_pool.cc \
 src/lib/ele/base/exception.cc \
+src/lib/ele/base/timestamp.cc \
+src/lib/ele/base/dynamic_buffer.cc \
 
 LINK_TYPE = exec
 INCLUDE = -Isrc
