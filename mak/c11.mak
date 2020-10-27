@@ -8,6 +8,13 @@ src/lib/ele/base/thread_pool.cc \
 src/lib/ele/base/exception.cc \
 src/lib/ele/base/timestamp.cc \
 src/lib/ele/base/dynamic_buffer.cc \
+src/lib/ele/base/base_logger.cc \
+src/lib/ele/base/log_async_sink.cc \
+src/lib/ele/base/log_core.cc \
+src/lib/ele/base/log_file_sink.cc \
+src/lib/ele/base/log_stderr_sink.cc \
+src/common/log.cc \
+
 
 LINK_TYPE = exec
 INCLUDE = -Isrc

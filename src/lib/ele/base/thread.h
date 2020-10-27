@@ -14,10 +14,10 @@ namespace ele
     public:
         using ThreadFunction = std::function<void()>;
 
-        explicit Thread(const ThreadFunction &func, const std::string &name = std::string());
+        explicit Thread(const std::string &name = std::string());
         ~Thread();
 
-        void start();
+        void start(const ThreadFunction &func);
         bool started();
 
         int join();

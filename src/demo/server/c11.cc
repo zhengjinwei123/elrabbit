@@ -14,6 +14,7 @@
 #include <lib/ele/base/thread.h>
 #include <lib/ele/base/thread_pool.h>
 #include <lib/ele/base/timestamp.h>
+#include <common/log.h>
 
 using namespace std;
 
@@ -264,28 +265,28 @@ int main(int argc, const char *argv[])
     // scanf("%d", i);
     // printf("%d", i);
 
-    ele::ObjectPoolUnique<STA> pPool;
+    // ele::ObjectPoolUnique<STA> pPool;
 
-    pPool.add(std::unique_ptr<STA>(new STA()));
-    pPool.add(std::unique_ptr<STA>(new STA()));
+    // pPool.add(std::unique_ptr<STA>(new STA()));
+    // pPool.add(std::unique_ptr<STA>(new STA()));
 
-    {
-        auto ptr = pPool.get();
-        pPool.get();
-        cout << "pool1 size:" << pPool.size() << endl;
-    }
+    // {
+    //     auto ptr = pPool.get();
+    //     pPool.get();
+    //     cout << "pool1 size:" << pPool.size() << endl;
+    // }
 
-    cout << "pool2 size:" << pPool.size() << endl;
+    // cout << "pool2 size:" << pPool.size() << endl;
 
-    {
-        pPool.get();
-        pPool.get();
-        cout << "pool3 size:" << pPool.size() << endl;
-    }
+    // {
+    //     pPool.get();
+    //     pPool.get();
+    //     cout << "pool3 size:" << pPool.size() << endl;
+    // }
 
-    cout << "pool4 size:" << pPool.size() << endl;
+    // cout << "pool4 size:" << pPool.size() << endl;
 
-    auto b = pPool.get();
+    // auto b = pPool.get();
 
     ele::Timestamp now;
     now.setNow();
@@ -310,28 +311,49 @@ int main(int argc, const char *argv[])
     cout << "j1:" << j1 << endl;
     cout << "j2:" << j2 << endl;
 
-    ele::ThreadPool threadPool("thread pool 1");
-    threadPool.start(10);
+    // ele::ThreadPool threadPool("thread pool 1");
+    // threadPool.start(10);
 
-    ele::ConcurrentQueue<int> conqueue(10);
+    // ele::ConcurrentQueue<int> conqueue(10);
 
-    while (1)
-    {
-        threadPool.run([&]() {
+    // while (1)
+    // {
+    //     threadPool.run([&]() {
 
             
 
-            int a = 1;
-            conqueue.pop(a);
-            conqueue.push(11010);
+    //         int a = 1;
+    //         conqueue.pop(a);
+    //         conqueue.push(11010);
 
 
-            cout << "hallo:" << a << ":" << endl;
-        });
+    //         cout << "hallo:" << a << ":" << endl;
+    //     });
+    // }
+
+    // int a;
+    // cin >> a;
+
+
+    char strBuff[1024];
+    ele::Timestamp now1;
+    now1.setNow();
+    ele::Timestamp::format(strBuff, sizeof(strBuff), "zjw_called_%Y-%m-%d %H:%M:%S", now1.getSecond());
+
+    cout << "zjw:" << strBuff <<  endl;
+
+
+    std::string main_log_file = "/mnt/hgfs/linuxcpp/log_zjw_.%Y%m%d.log";
+    if (false == common::log::LogManager::getInstance()->initMainLogger(main_log_file, true)) {
+        ::fprintf(stderr, "init main log failed \n");
+        return 0;
     }
 
-    int a;
-    cin >> a;
+    ::fprintf(stderr, "init main log success \n");
+
+
+    PLAIN_LOG_INFO("------------------------------\n");
+    LOG_INFO("game-battle-server start");
 
     return 0;
 }

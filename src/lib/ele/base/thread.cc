@@ -10,12 +10,11 @@
 
 namespace ele
 {
-    Thread::Thread(const ThreadFunction &func, const std::string &name) : started_(false),
-                                                                          joined_(false),
-                                                                          pthreadId_(0),
-                                                                          tid_(0),
-                                                                          func_(func),
-                                                                          name_(name)
+    Thread::Thread(const std::string &name) : started_(false),
+                                              joined_(false),
+                                              pthreadId_(0),
+                                              tid_(0),
+                                              name_(name)
     {
     }
 
@@ -27,10 +26,10 @@ namespace ele
         }
     }
 
-    void Thread::start()
+    void Thread::start(const ThreadFunction &func)
     {
         assert(!started_);
-
+        func_ = func;
         started_ = true;
         errno = pthread_create(&pthreadId_, nullptr, &startThread, this);
         if (errno != 0)
