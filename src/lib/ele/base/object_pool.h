@@ -44,6 +44,43 @@ namespace ele
 
         std::vector<T *> reused_object_list_;
     };
+
+    template <class T>
+    class ObjectPoolUnique
+    {
+    public:
+        using DeleterType = std::function<void(T *)>;
+        using ObjectType = std::unique_ptr<T, DeleterType>;
+
+    private:
+        std::vector<std::unique_ptr<T>> pool_;
+
+    private:
+        void add(std::unique_ptr<T> obj)
+        {
+            pool_.emplace_back(std::move(obj));
+        }
+
+        ObjectType getObject()
+        {
+            ObjectType obj(pool_.back().release(), [this](T *t) {
+                this->pool_.emplace_back(std::unique_ptr<T>(t));
+            });
+            pool_.pop_back();
+            return std::move(obj);
+        }
+
+    public:
+        ObjectType get()
+        {
+            if (pool_.empty())
+            {
+                add(std::unique_ptr<T>(new T()));
+            }
+
+            return getObject();
+        }
+    };
 } // namespace ele
 
 #endif // ELE_BASE_OBJECT_POOL_H

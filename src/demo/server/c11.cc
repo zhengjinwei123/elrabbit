@@ -3,6 +3,7 @@
 #include <memory>
 #include <unistd.h>
 
+#include <common/log.h>
 #include <lib/ele/base/concurrent_queue.h>
 #include <lib/ele/base/dynamic_buffer.h>
 #include <lib/ele/base/exception.h>
@@ -14,7 +15,6 @@
 #include <lib/ele/base/thread.h>
 #include <lib/ele/base/thread_pool.h>
 #include <lib/ele/base/timestamp.h>
-#include <common/log.h>
 
 using namespace std;
 
@@ -320,12 +320,9 @@ int main(int argc, const char *argv[])
     // {
     //     threadPool.run([&]() {
 
-            
-
     //         int a = 1;
     //         conqueue.pop(a);
     //         conqueue.push(11010);
-
 
     //         cout << "hallo:" << a << ":" << endl;
     //     });
@@ -334,26 +331,41 @@ int main(int argc, const char *argv[])
     // int a;
     // cin >> a;
 
-
     char strBuff[1024];
     ele::Timestamp now1;
     now1.setNow();
     ele::Timestamp::format(strBuff, sizeof(strBuff), "zjw_called_%Y-%m-%d %H:%M:%S", now1.getSecond());
 
-    cout << "zjw:" << strBuff <<  endl;
-
+    cout << "zjw:" << strBuff << endl;
 
     std::string main_log_file = "/mnt/hgfs/linuxcpp/log_zjw_.%Y%m%d.log";
-    if (false == common::log::LogManager::getInstance()->initMainLogger(main_log_file, true)) {
+    if (false == common::log::LogManager::getInstance()->initMainLogger(main_log_file, true))
+    {
         ::fprintf(stderr, "init main log failed \n");
         return 0;
     }
 
     ::fprintf(stderr, "init main log success \n");
 
-
     PLAIN_LOG_INFO("------------------------------\n");
     LOG_INFO("game-battle-server start");
+
+    std::string action_log_file = "/mnt/hgfs/linuxcpp/action_log_.%Y%m%d.log";
+    if (false == common::log::LogManager::getInstance()->initActionLogger(action_log_file))
+    {
+        ::fprintf(stderr, "init action log failed \n");
+        return 0;
+    }
+
+    LOG_ACTION("action %d,%s", 1, "zjw");
+
+    std::string res_log_file = "/mnt/hgfs/linuxcpp/res_item_log_.%Y%m%d.log";
+    if (false == common::log::LogManager::getInstance()->initResourceItemLogger(res_log_file))
+    {
+        ::fprintf(stderr, "init res log failed \n");
+        return 0;
+    }
+    LOG_RESOURCE_ITEM("RES ITEM %d | %s", 111, "zjwzjw");
 
     return 0;
 }

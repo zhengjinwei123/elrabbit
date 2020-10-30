@@ -14,6 +14,11 @@ src/lib/ele/base/log_core.cc \
 src/lib/ele/base/log_file_sink.cc \
 src/lib/ele/base/log_stderr_sink.cc \
 src/common/log.cc \
+src/lib/ele/net/socket_addr.cc \
+src/lib/ele/base/timer_heap.cc \
+src/lib/ele/net/io_device.cc \
+src/lib/ele/net/io_service.cc \
+src/lib/ele/net/tcp_socket.cc \
 
 
 LINK_TYPE = exec

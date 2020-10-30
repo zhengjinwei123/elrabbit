@@ -54,7 +54,6 @@ namespace ele
         queue_buffer->reserveWritableBytes(size);
         ::memcpy(queue_buffer->writeBegin(), buffer, size);
         queue_buffer->write(size);
-
         queue_.push(queue_buffer.get());
         queue_buffer.release();
     }
