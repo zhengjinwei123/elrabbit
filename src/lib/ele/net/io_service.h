@@ -14,6 +14,7 @@ namespace ele
 
         class IOService
         {
+        public:
             typedef int64_t TimerId;
             using TimerCallback = std::function<void(TimerId)>;
 

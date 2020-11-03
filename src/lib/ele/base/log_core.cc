@@ -21,7 +21,7 @@ namespace ele
 
             using LogSinkVector = std::vector<LogSink *>;
             using LogLevelVector = std::vector<int>;
-            using LogFormatterVector = std::vector<LogFormatter>;
+            using LogFormatterVector = std::vector<LogCore::LogFormatter>;
 
             explicit Logger(LogFormatter formatter, int level_filter,
                             int max_log_size);

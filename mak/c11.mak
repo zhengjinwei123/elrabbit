@@ -19,6 +19,7 @@ src/lib/ele/base/timer_heap.cc \
 src/lib/ele/net/io_device.cc \
 src/lib/ele/net/io_service.cc \
 src/lib/ele/net/tcp_socket.cc \
+src/lib/ele/net/tcp_service.cc \
 
 
 LINK_TYPE = exec
