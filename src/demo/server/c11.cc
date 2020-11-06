@@ -3,7 +3,7 @@
 #include <memory>
 #include <unistd.h>
 
-#include <common/log.h>
+#include <lib/ele/common/log.h>
 #include <lib/ele/base/concurrent_queue.h>
 #include <lib/ele/base/dynamic_buffer.h>
 #include <lib/ele/base/exception.h>
@@ -15,6 +15,7 @@
 #include <lib/ele/base/thread.h>
 #include <lib/ele/base/thread_pool.h>
 #include <lib/ele/base/timestamp.h>
+#include "session_server/server_app.h"
 
 using namespace std;
 
@@ -339,7 +340,7 @@ int main(int argc, const char *argv[])
     cout << "zjw:" << strBuff << endl;
 
     std::string main_log_file = "/mnt/hgfs/linuxcpp/log_zjw_.%Y%m%d.log";
-    if (false == common::log::LogManager::getInstance()->initMainLogger(main_log_file, true))
+    if (false == ele::common::log::LogManager::getInstance()->initMainLogger(main_log_file, true))
     {
         ::fprintf(stderr, "init main log failed \n");
         return 0;
@@ -351,7 +352,7 @@ int main(int argc, const char *argv[])
     LOG_INFO("game-battle-server start");
 
     std::string action_log_file = "/mnt/hgfs/linuxcpp/action_log_.%Y%m%d.log";
-    if (false == common::log::LogManager::getInstance()->initActionLogger(action_log_file))
+    if (false == ele::common::log::LogManager::getInstance()->initActionLogger(action_log_file))
     {
         ::fprintf(stderr, "init action log failed \n");
         return 0;
@@ -360,12 +361,23 @@ int main(int argc, const char *argv[])
     LOG_ACTION("action %d,%s", 1, "zjw");
 
     std::string res_log_file = "/mnt/hgfs/linuxcpp/res_item_log_.%Y%m%d.log";
-    if (false == common::log::LogManager::getInstance()->initResourceItemLogger(res_log_file))
+    if (false == ele::common::log::LogManager::getInstance()->initResourceItemLogger(res_log_file))
     {
         ::fprintf(stderr, "init res log failed \n");
         return 0;
     }
     LOG_RESOURCE_ITEM("RES ITEM %d | %s", 111, "zjwzjw");
+
+    session_server::ServerApp::getInstance();
+    if (sServerApp->init() == false)
+    {
+        LOG_ERROR("init server_app failed");
+        return 1;
+    }
+
+    sServerApp->loop();
+
+    sServerApp->finalize();
 
     return 0;
 }

@@ -53,7 +53,7 @@ namespace ele
             bool getPeerAddr(SocketId socket_id, SocketAddr *addr) const;
 
             bool sendMessage(SocketId socket_id, const char *buffer, size_t size,
-                             const SendCompleteCallback &send_complete_cb);
+                             const SendCompleteCallback &send_complete_cb = nullptr);
             bool sendMessageThenClose(SocketId socket_id, const char *buffer, size_t size);
         
             void broadcastMessage(const char *buffer, size_t size);

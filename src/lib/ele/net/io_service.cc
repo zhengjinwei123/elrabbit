@@ -164,7 +164,7 @@ namespace ele
 
             Timestamp now;
 
-            while (~quit_)
+            while (!quit_)
             {
                 now.setNow();
 
